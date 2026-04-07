@@ -1,0 +1,45 @@
+# Course Management System
+
+## Giới thiệu
+Đây là project quản lý khóa học trực tuyến được xây dựng bằng Laravel.
+
+## Chức năng
+- Quản lý khóa học
+- Quản lý bài học
+- Quản lý học viên đăng ký
+- Dashboard thống kê
+- Tìm kiếm và lọc khóa học
+- Soft Delete và Restore
+
+## Công nghệ sử dụng
+- Laravel
+- MySQL
+- Blade Template
+- Eloquent ORM
+- Bootstrap/CSS
+
+## Cài đặt project
+
+### 1. Clone project
+```bash
+git clone <link-github>
+cd cms
+### 2. Cài thư viện
+composer install
+npm install
+### 3. Tạo file môi trường
+copy .env.example .env
+### 4. Tạo APP_KEY
+php artisan key:generate
+### 5. Cấu hình database trong file .env
+DB_DATABASE=cms
+DB_USERNAME=root
+DB_PASSWORD=
+### 6. Chạy migrate
+php artisan migrate
+### 7. Tạo link storage
+php artisan storage:link
+### 8. Chạy project
+php artisan serve
+Tác giả
+Hoàng Ngọc Thành
